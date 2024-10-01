@@ -10,22 +10,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-
+    
 <body>
-
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
-    <!-- Stuff for body goes here -->
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><a class="navbar-brand" href="#"><img src="./images/pomeranian.svg" height="60px" width="auto">Paisley the Pomchi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
+      <!--Big Welcome-->
+      <div id="about" class="px-4 py-5 my-5 text-center">
+        <img id="paw-print" class="d-block mx-auto mb-4" src="./images/paw-print.svg" width="120px" height="auto" alt="" width="72" height="57">
+        <h1 class="display-5 fw-bold">Worship Paisley!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Welcome to the Paisley Fan Club, where we celebrate the irresistible charm of our beloved Pomeranian Chihuahua, Paisley. Here, we gather in joyous unity to honor the fluffiest leader of all. His tiny paws guide us to happiness, and his wagging tail is a symbol of endless delight. Join us in this playful journey of devotion, where every bark is a cheerful command and every snuggle is a cherished gift.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-secondary btn-lg px-4 gap-3">Join us!</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='login.html'">Fan Login</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Grid Cards-->
+      <div id="gallery" class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/paisley-01.JPG" class="card-img-top" alt="Paisley with a stuffed Pokeball.">
+            <div class="card-body">
+              <h5 class="card-title">Pokemon or Pomeranian?</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vero quod amet vitae accusantium consequuntur iusto, quibusdam praesentium odit optio similique facere voluptatem, modi nihil voluptatibus minus eius omnis hic.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/paisley-02.jpg" class="card-img-top" alt="Paisley enjoys bath time.">
+            <div class="card-body">
+              <h5 class="card-title">Paisley is a free elf now.</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta illum labore beatae perspiciatis! Earum laboriosam ut corrupti culpa ipsam praesentium, dicta dolor distinctio aut, maxime odit, nobis ratione ab tempore.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/paisley-03.JPG" class="card-img-top" alt="Paisley on Microsoft Class for COMP1800.">
+            <div class="card-body">
+              <h5 class="card-title">Enjoying Carly's Lecture</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime minus consequuntur dolor ullam, neque animi cum quibusdam. Omnis cupiditate illo reprehenderit, praesentium perspiciatis in ipsa rem iste ad quo quos.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      
+    </div>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
